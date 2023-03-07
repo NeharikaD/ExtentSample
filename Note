@@ -1,0 +1,19 @@
+--> Order of log level events in extent reports:
+
+      1st -  fail
+      2nd -  skip
+      3rd -  warning
+      4th -  pass
+      5th -  info
+
+--> different attributes for test :
+                               Author, Category, Device
+* we don't need to maintain any order, it can br like,
+                               .assignCategory("Smoke")
+                               .assignAuthor("Harry Potter")
+                               .assignDevice("Edge 109")
+
+--> Extent Report Configuration
+    * reporter(sparkReporter) is helping you to create report so, you'll be making configuration changes to spark reporter.
+    * we can even do the same to the extent report obj but it has only one kind of configuration.
+    *for reporter we can make multiple reports.
