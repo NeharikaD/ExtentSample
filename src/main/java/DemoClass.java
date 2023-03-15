@@ -6,14 +6,13 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
-import java.lang.reflect.Field;
-import java.time.format.DecimalStyle;
 
 public class DemoClass {
     public static void main(String[] args) throws IOException {
         ExtentReports extentReport = new ExtentReports();
         File file = new File("C:/Users/Neharika/IdeaProjects/PracticeExtentMaven/report.html");
-//        ExtentSparkReporter sparkReporter = new ExtentSparkReporter("C:/Users/Neharika/IdeaProjects/PracticeExtentMaven/report.html");    //    or
+//        ExtentSparkReporter sparkReporter = new ExtentSparkReporter("C:/Users/Neharika/IdeaProjects/PracticeExtentMaven/report.html");
+//    or
         ExtentSparkReporter sparkReporter = new ExtentSparkReporter(file);
         extentReport.attachReporter(sparkReporter);
 
