@@ -1,4 +1,4 @@
-//different attributes for test :
+package org.example;//different attributes for test :
 //                               Author, Category, Device
 
 import com.aventstack.extentreports.ExtentReports;
